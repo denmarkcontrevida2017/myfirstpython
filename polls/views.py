@@ -45,9 +45,6 @@ class ResultsView(generic.DetailView):
     template_name = 'polls/results.html'
 
 
-def vote(request, question_id):
-    ... # same as above, no changes needed.
-
 def get_queryset(self):
     """
     Return the last five published questions (not including those set to be
